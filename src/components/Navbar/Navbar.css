@@ -1,0 +1,108 @@
+/* Navbar Container */
+.navbar {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background-color: var(--background-color, white);
+    color: var(--text-color, black);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+  }
+  
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo Section */
+  /* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center; /* Vertically aligns the logo and text */
+  text-decoration: none; /* Removes underline for the link */
+  gap: 0.5rem; /* Adds space between the logo and text */
+}
+
+.logo {
+  width: 2rem; /* Adjust size of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.logo-text {
+  font-size: 1.5rem; /* Adjust text size */
+  font-weight: 600; /* Make the text bold */
+  color: var(--text-color, black); /* Ensure it matches the theme */
+}
+
+  
+  /* Desktop Navigation */
+  .navbar-desktop {
+    display: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .navbar-item {
+    padding: 0.5rem 0;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: inherit;
+    transition: color 0.5s;
+  }
+  
+  .navbar-link:hover {
+    color: var(--primary-color, blue);
+    border-bottom: 2px solid var(--primary-color, blue);
+  }
+  
+  /* Primary Button */
+  .primary-btn {
+    background-color: var(--primary-color, blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .primary-btn:hover {
+    background-color: var(--primary-hover-color, darkblue);
+  }
+  
+  /* Mobile Navigation */
+  .navbar-mobile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .navbar-desktop {
+      display: block;
+    }
+  
+    .navbar-mobile {
+      display: none;
+    }
+  }
+  
